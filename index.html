@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Saleticket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="top-nav">
+            <div class="row">
+                <div class="col">
+                    <a class="logo" href="index.html">SALETICKET</a>
+                </div>
+                <div class="col">
+                    <span class="mob-menu fas fa-bars" onclick="openMenu()"></span>
+                    <ul class="nav">
+                        <span class="close-menu fas fa-times" onclick="closeMenu()"></span>
+                        <li><a href="#" class="btn-top">INICIO</a></li>
+                        <li>
+                            <select class="select-category" id="category" name="category">
+                                <option value="00" selected>CATEGORIAS</option>
+                                <option value="01">Conciertos</option>
+                                <option value="02">Comvenciones</option>
+                                <option value="03">Festivales</option>
+                                <option value="04">Conferencias</option>
+                                <option value="05">Otros</option>
+                            </select>
+                        </li>
+                        <li><a href="#" class="btn-top">CALENDARIO</a></li>
+                        <li><a href="#" class="btn-top">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- fin-header -->
+    <div class="container-slider">
+        <img class="img-slider" src="./img/00.jpg" alt="picture">
+    </div>
+    <!-- fin scroll -->
+    <div class="container-proximos">
+        <h2>Proximos eventos</h2>
+        <div class="row">
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/00.jpg" alt="img"></a></div>
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/01.jpg" alt="img"></a></div>
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/03.jpg" alt="img"></a></div>
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/07.jpg" alt="img"></a></div>
+        </div>
+    </div>
+    <!-- fin proximos -->
+    <div class="container-todo">
+        <h2>Lista de eventos</h2>
+        <div class="row">
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/03.jpg" alt="img"></a></div>
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/00.jpg" alt="img"></a></div>
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/07.jpg" alt="img"></a></div>
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/01.jpg" alt="img"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/07.jpg" alt="img"></a></div>
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/03.jpg" alt="img"></a></div>
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/01.jpg" alt="img"></a></div>
+            <div class="col-sm-3"><a href="event_info.html"><img class="img" src="./img/00.jpg" alt="img"></a></div>
+        </div>
+    </div>
+    <!-- font todo -->
+    <footer>
+        <p class="footer-text">2021 &copy;</p>
+    </footer>
+    <!-- fin-footer -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

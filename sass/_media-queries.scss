@@ -1,0 +1,101 @@
+@import 'vars';
+
+//media queries
+$phone : '(max-width: 480px)';
+
+@mixin respond-to($phone) {
+    @media only screen and #{$phone} {
+        @content;
+        body{
+            margin: 0;
+            padding: 1em 1em;
+        }
+        .close-menu{
+            display: inline;
+            font-size: 25px;
+            color: #fff;
+            float: right;
+        }
+        .logo{
+            margin: 0 2em;
+            font-size: 15px;
+        }
+        .mob-menu{
+            position: absolute;
+            top: 0.5em;
+            left: 0.5em;
+            display: inline;
+            font-size: 25px;
+            color: #fff;
+        }
+        .top-nav{
+            padding: 0;
+        }
+        .nav{
+            margin: 0;
+            position: absolute;
+            top: 0em;
+            left: -25em;
+            margin: 0;
+            padding: 2em 3em;
+            width: 100%;
+            height: 100%;
+            background: $green;
+            z-index: 2;
+            display: block;
+            transition: 0.5s;
+        }
+        .btn-top{
+            font-size: 18px;
+            padding: 1em 0;
+            text-align: left;
+        }
+        .container-slider{
+            height: 200px;
+        }
+        h1{
+            font-size: 25px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        .text{
+            font-size: 14px;
+        }
+        .container-proximos{
+            padding: 0;
+        }
+        .img{
+            margin: 0.5em 0;
+        }
+        .container-todo{
+            padding: 0;
+        }
+        footer{
+            margin: 1em 0 0 0;
+            padding: 0.5em;
+        }
+        //event-info
+        .container-event{
+            padding: 0 2em;
+        }
+        .img-event{
+            padding: 1.5em 0;
+        }
+        //reserv
+        .conteiner-reserv{
+            padding: 0 2em;
+        }
+        .img-reserv{
+            margin: 0;
+            padding: 1em 0;
+            width: 300px;
+        }
+        .select-number{
+            width: 250px;
+        }
+        .input-text{
+            width: 250px;
+        }
+    }
+}
