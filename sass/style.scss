@@ -62,7 +62,8 @@ body{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    padding: 1em 0;
+    margin: 0.6em 0;
+    padding: 0.5em;
     font-size: 20px;
     color: #fff;
     border: none;
@@ -72,7 +73,7 @@ body{
     @include container();
     padding: 0;
     overflow: hidden;
-    height: 550px;
+    height: 600px;
 }
 h1{
     font-family: 'Roboto', sans-serif;
@@ -88,20 +89,37 @@ h2{
 }
 
 .img-slider{
-    max-width: 100%;
+    width: 100%;
 }
 .col-sm-3{
-    :hover{
-        transform:scale(1.2);
-    }
+    margin: 0.5em;
+    padding: 0;
+    max-height: 320px;
+    max-width: 320px;
+}
+.galery{
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    border: 1pt solid;
 }
 .img{
-    max-width: 270px;
-    max-height: 350px;
-    margin: 1.5em 0;
+    margin-bottom: 1em;
+    width: 100%;
+    max-height: 200px;
+    height: auto;
+}
+.text-gallerie{
+    margin: 0;
+    padding: 0 0.5em;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
 }
 .container-proximos{
     @include container();
+    padding: 2em 6em 4em;
 }
 .container-todo{
     @include container();
@@ -119,7 +137,6 @@ footer{
     width: 100%;
     height: auto;
     margin: 0;
-    padding: 2em 0;
 }
 .container-event{
     padding: 2em 6em;
@@ -127,16 +144,16 @@ footer{
 .text{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
 }
 .btn-reservar{
     text-align: center;
-    margin: 2em 0;
+    margin: 1em 0 2em 0;
     color: $green;
     border: 3px solid $green;
     padding: 0.5em 2em;
     display: block;
-    max-width: 10em;
+    max-width: 12em;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -161,10 +178,12 @@ footer{
     padding: 2em 6em;
 }
 .select-number{
+    border-radius: 5px;
     width: 300px;
     margin: 0.5em 0;
 }
 .input-text{
+    border-radius: 5px;
     width: 300px;
     margin: 0.5em 0;
 }

@@ -8,7 +8,13 @@ $phone : '(max-width: 480px)';
         @content;
         body{
             margin: 0;
-            padding: 1em 1em;
+            padding: 0;
+        }
+        .col{
+            padding: 0;
+        }
+        .col-sm-3{
+            padding: 0;
         }
         .close-menu{
             display: inline;
@@ -17,7 +23,7 @@ $phone : '(max-width: 480px)';
             float: right;
         }
         .logo{
-            margin: 0 2em;
+            margin: 0 4em;
             font-size: 15px;
         }
         .mob-menu{
@@ -50,6 +56,11 @@ $phone : '(max-width: 480px)';
             padding: 1em 0;
             text-align: left;
         }
+        .select-category{
+            margin: 0;
+            padding: 0.5em 0;
+            font-size: 18px;
+        }
         .container-slider{
             height: 200px;
         }
@@ -63,13 +74,10 @@ $phone : '(max-width: 480px)';
             font-size: 14px;
         }
         .container-proximos{
-            padding: 0;
-        }
-        .img{
-            margin: 0.5em 0;
+            padding: 0 3em;
         }
         .container-todo{
-            padding: 0;
+            padding: 0 3em;
         }
         footer{
             margin: 1em 0 0 0;
@@ -84,18 +92,18 @@ $phone : '(max-width: 480px)';
         }
         //reserv
         .conteiner-reserv{
-            padding: 0 2em;
+            padding: 0 3em;
         }
         .img-reserv{
-            margin: 0;
-            padding: 1em 0;
+            margin: 1em 0.5em 1em 0;
+            padding: 0;
             width: 300px;
         }
         .select-number{
-            width: 250px;
+            width: 240px;
         }
         .input-text{
-            width: 250px;
+            width: 240px;
         }
     }
 }
