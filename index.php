@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <title>Saleticket</title>
@@ -30,19 +29,20 @@
                     <span class="mob-menu fas fa-bars" onclick="openMenu()"></span>
                     <ul class="nav">
                         <span class="close-menu fas fa-times" onclick="closeMenu()"></span>
-                        <li><a href="index.php" class="btn-top">INICIO</a></li>
+                        <li><a href="event.php" class="btn-top">INICIO</a></li>
                         <li>
                             <select class="select-category" id="category" name="category">
                                 <option value="00" selected>CATEGORIAS</option>
                                 <option value="01">Conciertos</option>
-                                <option value="02">Comvenciones</option>
+                                <option value="02">Convenciones</option>
                                 <option value="03">Festivales</option>
-                                <option value="04">Conferencias</option>
+                                <option value="04">Competiciones</option>
                                 <option value="05">Otros</option>
                             </select>
                         </li>
                         <li><a href="event.php" class="btn-top">CALENDARIO</a></li>
-                        <li><a href="#" class="btn-top">CONTACTO</a></li>
+                        <li><input class="input-search" type="text"><button class="btn-search fas fa-search" onclick="search()"></button></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -50,9 +50,9 @@
     </header>
     <!-- fin-header -->
     <div class="container-slider">
-        <img class="img-slider" src="./img/00.jpg" alt="picture">
+        <img class="img-slider" src="./img/05.jpg" alt="picture">
         <img class="img-slider" src="./img/01.jpg" alt="picture">
-        <img class="img-slider" src="./img/04.jpg" alt="picture">
+        <img class="img-slider" src="./img/02.jpg" alt="picture">
         <img class="img-slider" src="./img/03.jpg" alt="picture">
     </div>
     <!-- fin scroll -->
@@ -61,34 +61,34 @@
         <div class="row">
         <div class="col-sm-3">
                 <div class="galery">
-                    <a href="event_info.php"><img class="img" src="./img/01.jpg" alt="img"></a>
-                        <div class="row">
-                        <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA:   Sin definir</p></div>
-                        </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="galery">
                     <a href="event_info.php"><img class="img" src="./img/00.jpg" alt="img"></a>
                         <div class="row">
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA:   Sin definir</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA: Competicion</p></div>
                         </div>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="galery">
-                    <a href="event_info.php"><img class="img" src="./img/04.jpg" alt="img"></a>
+                    <a href="event_info.php"><img class="img" src="./img/01.jpg" alt="img"></a>
                         <div class="row">
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA:   Sin definir</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA: Festival</p></div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="galery">
+                    <a href="event_info.php"><img class="img" src="./img/02.jpg" alt="img"></a>
+                        <div class="row">
+                        <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA: Concierto</p></div>
                         </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA:   Sin definir</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA: Concierto</p></div>
                         </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA:   Sin definir</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA: Festival</p></div>
                         </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA:   Sin definir</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA: Competicion</p></div>
                         </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA:   Sin definir</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA: Competicion</p></div>
                         </div>
                 </div>
             </div>
@@ -149,18 +149,18 @@
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA:   Sin definir</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA: Concierto</p></div>
                         </div>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="galery">
-                    <a href="event_info.php"><img class="img" src="./img/01.jpg" alt="img"></a>
+                    <a href="event_info.php"><img class="img" src="./img/05.jpg" alt="img"></a>
                         <div class="row">
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA:   Sin definir</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA: Concierto</p></div>
                         </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">FECHA:   00/00/00</p></div>
-                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA:   Sin definir</p></div>
+                        <div class="col-sm-12"><p class="text-gallerie">CATEGORIA: Competicion</p></div>
                         </div>
                 </div>
             </div>

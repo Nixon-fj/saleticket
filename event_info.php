@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <title>Saleticket</title>
@@ -34,14 +33,14 @@
                             <select class="select-category" id="category" name="category">
                                 <option value="00" selected>CATEGORIAS</option>
                                 <option value="01">Conciertos</option>
-                                <option value="02">Comvenciones</option>
+                                <option value="02">Convenciones</option>
                                 <option value="03">Festivales</option>
                                 <option value="04">Conferencias</option>
                                 <option value="05">Otros</option>
                             </select>
                         </li>
                         <li><a href="event.php" class="btn-top">CALENDARIO</a></li>
-                        <li><a href="#" class="btn-top">CONTACTO</a></li>
+                        <li><input class="input-search" type="text"><button class="btn-search fas fa-search" onclick="search()"></button></li>
                     </ul>
                 </div>
             </div>
@@ -50,7 +49,7 @@
     <!-- fin header -->
     <div class="container-event">
 
-        <img class="img-event" src="img/00.jpg" alt="picture">
+        <img class="img-event" src="./img/00.jpg" alt="picture">
 
         <h1>Nombre del evento</h1>
 
@@ -58,13 +57,19 @@
             tincidunt ut laoreet dolore consectetuer adipiscing elit, sed diam nonummy nibh euismod
             tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim venie dolor in hendrerit.</p>
         
-        <i class="icon fas fa-calendar-alt"></i>
-        <H2 style="display: inline-block;">Destalles</H2>
+        <H2>Destalles</H2>
         <div class="row">
-            <p class="text">NOMBRE: Nombre del evento</p>
-            <p class="text">LUGAR: Sin definir</p>
-            <p class="text">FECHA: 00/00/00</p>
-            <p class="text">CATEGORIA: Sin definir</p>
+            <div class="col">
+                <p class="text">CATEGORIA: Sin definir</p>
+                <p class="text">TIPO DE PUBLICO: Apto para todo publico</p>
+                <p class="text">LUGAR: Sin definir</p>
+            
+            </div>
+                <div class="col">
+                <p class="text">FECHA: 00/00/00</p>
+                <p class="text">HORA: 00:00</p>
+                <p class="text">COSTO: Gratuito</p>
+            </div>
         </div>
 
         <a href="event_reserv.php" class="btn-reservar">REGISTRARSE</a>
@@ -72,7 +77,7 @@
         <H2>Relacionado</H2>
 
         <div class="row">
-        <div class="col-sm-3">
+            <div class="col-sm-3">
                 <div class="galery">
                     <a href="event_info.php"><img class="img" src="./img/01.jpg" alt="img"></a>
                         <div class="row">

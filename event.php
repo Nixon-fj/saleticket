@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <title>Saleticket</title>
@@ -34,14 +33,14 @@
                             <select class="select-category" id="category" name="category">
                                 <option value="00" selected>CATEGORIAS</option>
                                 <option value="01">Conciertos</option>
-                                <option value="02">Comvenciones</option>
+                                <option value="02">Convenciones</option>
                                 <option value="03">Festivales</option>
                                 <option value="04">Conferencias</option>
                                 <option value="05">Otros</option>
                             </select>
                         </li>
                         <li><a href="event.php" class="btn-top">CALENDARIO</a></li>
-                        <li><a href="#" class="btn-top">CONTACTO</a></li>
+                        <li><input class="input-search" type="text"><button class="btn-search fas fa-search" onclick="search()"> </button></li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +48,9 @@
     </header>
     <!-- fin header -->
 
+
     <div class="container-event">
+    <h1>CATEGORIA</h1>
         <div class="row">
             <div class="col-sm-3">
                 <div class="galery">
@@ -97,7 +98,7 @@
             </div>
             <div class="col-sm-3">
                 <div class="galery">
-                    <a href="event_info.php"><img class="img" src="./img/07.jpg" alt="img"></a>
+                    <a href="event_info.php"><img class="img" src="./img/05.jpg" alt="img"></a>
                         <div class="row">
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
