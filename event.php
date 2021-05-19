@@ -27,7 +27,7 @@
                 <div class="col">
                     <span class="mob-menu fas fa-bars" onclick="openMenu()"></span>
                     <ul class="nav">
-                        <span class="close-menu fas fa-times" onclick="closeMenu()"></span>
+                        <li><span class="close-menu fas fa-times" onclick="closeMenu()"></span></li>
                         <li><a href="index.php" class="btn-top">INICIO</a></li>
                         <li>
                             <select class="select-category" id="category" name="category">

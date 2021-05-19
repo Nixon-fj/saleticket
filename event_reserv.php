@@ -27,7 +27,7 @@
                 <div class="col">
                     <span class="mob-menu fas fa-bars" onclick="openMenu()"></span>
                     <ul class="nav">
-                        <span class="close-menu fas fa-times" onclick="closeMenu()"></span>
+                        <li><span class="close-menu fas fa-times" onclick="closeMenu()"></span></li>
                         <li><a href="index.php" class="btn-top">INICIO</a></li>
                         <li>
                             <select class="select-category" id="category" name="category">
@@ -58,11 +58,11 @@
                     </p>
                     <div class="col-sm-4">
                         <form action="#">
-                            <div class="col"><label for="">Nombre</label></div>
+                            <div class="col"><label for="name">Nombre</label></div>
                             <div class="col"><input class="input-text" type="text"></div>
-                            <div class="col"><label for="">Correo</label></div>
+                            <div class="col"><label for="mail">Correo</label></div>
                             <div class="col"><input class="input-text" type="text"></div>
-                            <div class="col"><label for="">Adultos</label></div>
+                            <div class="col"><label for="padult">Adultos</label></div>
                             <div class="col">
                                 <select class="select-number" id="adult" name="adutl">
                                     <option value="00" selected>0</option>
@@ -73,7 +73,7 @@
                                     <option value="05">5</option>
                                 </select>
                         </div>
-                        <div class="col"><label for="">Menores</label></div>
+                        <div class="col"><label for="pminor">Menores</label></div>
                         <div class="col">
                             <select class="select-number" id="minor" name="minor">
                                 <option value="00" selected>0</option>
@@ -84,7 +84,7 @@
                                 <option value="05">5</option>
                             </select>
                         </div>
-                        <div class="col"><label for="">Total</label></div>
+                        <div class="col"><label for="total">Total</label></div>
                         <div class="col"><p id="total">$0.0</p></div>
                         <div class="col"><button class="btn-reservar" onclick="registrar()">Registrarse</button></div>
                         
