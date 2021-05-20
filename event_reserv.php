@@ -73,7 +73,7 @@
                                     <option value="05">5</option>
                                 </select>
                         </div>
-                        <div class="col"><label for="pminor">Menores</label></div>
+                        <div class="col"><label>Menores</label></div>
                         <div class="col">
                             <select class="select-number" id="minor" name="minor">
                                 <option value="00" selected>0</option>
@@ -84,7 +84,7 @@
                                 <option value="05">5</option>
                             </select>
                         </div>
-                        <div class="col"><label for="total">Total</label></div>
+                        <div class="col"><label>Total</label></div>
                         <div class="col"><p id="total">$0.0</p></div>
                         <div class="col"><button class="btn-reservar" onclick="registrar()">Registrarse</button></div>
                         
