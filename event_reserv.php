@@ -49,7 +49,7 @@
     <!-- fin header -->
     <div class="conteiner-reserv">
         <div class="row">
-            <div class="col"><img class="img-reserv" src="img/00.jpg" alt="img"></div>
+            <div class="col"><img class="img-reserv" src="img/05.jpg" alt="img"></div>
                 <div class="col">
                     <h1>Nombre del evento</h1>
                     <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
@@ -97,8 +97,24 @@
         <!-- ventana emergente -->
         <div class="container-confirm">
                 <button class="close-icon fas fa-times" onclick="closeConfirm()"></button>
-                <p class="text-confirm">¡Registrado con exito!</p>
-            </div>
+                <p class="text-confirm">¡Registrado con exito!</p><br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-details">Nombre:</p>
+                        <p class="text-details">Correo:</p>
+                        <p class="text-details">Adultos:</p>
+                        <p class="text-details">Menores:</p><br>
+                        <p class="text-details">Total:</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-details">Nombre del cliente</p>
+                        <p class="text-details">Correo electronico</p>
+                        <p class="text-details">0</p>
+                        <p class="text-details">0</p><br>
+                        <p class="text-details">$0.0</p>
+                    </div>
+                </div>
+        </div>
 
     <footer>
         <p class="footer-text">2021 &copy;</p>

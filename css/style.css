@@ -390,15 +390,17 @@ footer {
   width: 100%;
   height: auto;
   text-align: center;
+  padding: 2em 4em;
   display: none;
   width: 35%;
-  height: 100px;
+  height: auto;
   position: absolute;
   background-color: #007E88;
   z-index: 3;
   top: 20em;
   left: 30em;
   border-radius: 0.5em;
+  text-align: center;
 }
 
 .close-icon {
@@ -414,5 +416,13 @@ footer {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+}
+
+.text-details {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
 }

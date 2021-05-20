@@ -50,18 +50,15 @@
     </header>
     <!-- fin-header -->
     <div class="container-slider">
-        <img class="img-slider" src="./img/05.jpg" alt="picture">
-        <img class="img-slider" src="./img/01.jpg" alt="picture">
-        <img class="img-slider" src="./img/02.jpg" alt="picture">
-        <img class="img-slider" src="./img/03.jpg" alt="picture">
+        <img class="img-slider" src="./img/06.jpg" alt="picture">
     </div>
     <!-- fin scroll -->
     <div class="container-proximos">
-        <h2>Proximos eventos</h2>
+        <h1>Proximos eventos</h1>
         <div class="row">
         <div class="col-sm-3">
                 <div class="galery">
-                    <a href="event_info.php"><img class="img" src="./img/00.jpg" alt="img"></a>
+                    <a href="event_info.php"><img class="img" src="./img/03.jpg" alt="img"></a>
                         <div class="row">
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
@@ -94,7 +91,7 @@
             </div>
             <div class="col-sm-3">
                 <div class="galery">
-                    <a href="event_info.php"><img class="img" src="./img/03.jpg" alt="img"></a>
+                    <a href="event_info.php"><img class="img" src="./img/00.jpg" alt="img"></a>
                         <div class="row">
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
@@ -183,6 +180,7 @@
     </footer>
     <!-- fin-footer -->
     <script src="js/main.js"></script>
+    
 </body>
 
 </html>

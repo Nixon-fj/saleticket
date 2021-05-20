@@ -49,7 +49,7 @@
     <!-- fin header -->
     <div class="container-event">
 
-        <img class="img-event" src="./img/00.jpg" alt="picture">
+        <img class="img-event" src="./img/05.jpg" alt="picture">
 
         <h1>Nombre del evento</h1>
 

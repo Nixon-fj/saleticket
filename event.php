@@ -54,7 +54,7 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="galery">
-                    <a href="event_info.php"><img class="img" src="./img/01.jpg" alt="img"></a>
+                    <a href="event_info.php"><img class="img" src="./img/00.jpg" alt="img"></a>
                         <div class="row">
                         <div class="col-sm-12"><p class="text-gallerie">NOMBRE:   Nombre del evento</p></div>
                         <div class="col-sm-12"><p class="text-gallerie">LUGAR:   Sin definir</p></div>
