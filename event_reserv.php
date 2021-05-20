@@ -58,11 +58,11 @@
                     </p>
                     <div class="col-sm-4">
                         <form action="#">
-                            <div class="col"><label id="name" for="name">Nombre</label></div>
+                            <div class="col"><label>Nombre</label></div>
                             <div class="col"><input class="input-text" type="text"></div>
-                            <div class="col"><label for="mail">Correo</label></div>
+                            <div class="col"><label>Correo</label></div>
                             <div class="col"><input class="input-text" type="text"></div>
-                            <div class="col"><label for="padult">Adultos</label></div>
+                            <div class="col"><label>Adultos</label></div>
                             <div class="col">
                                 <select class="select-number" id="adult" name="adutl">
                                     <option value="00" selected>0</option>
