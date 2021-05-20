@@ -58,7 +58,7 @@
                     </p>
                     <div class="col-sm-4">
                         <form action="#">
-                            <div class="col"><label for="name">Nombre</label></div>
+                            <div class="col"><label id="name" for="name">Nombre</label></div>
                             <div class="col"><input class="input-text" type="text"></div>
                             <div class="col"><label for="mail">Correo</label></div>
                             <div class="col"><input class="input-text" type="text"></div>
