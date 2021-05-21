@@ -31,7 +31,7 @@
                         <li><span class="close-menu fas fa-times" onclick="closeMenu()"></span></li>
                         <li><a href="event.php" class="btn-top">INICIO</a></li>
                         <li>
-                            <select class="select-category" id="category" name="category">
+                            <select class="select-category">
                                 <option value="00" selected>CATEGORIAS</option>
                                 <option value="01">Conciertos</option>
                                 <option value="02">Convenciones</option>
