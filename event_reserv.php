@@ -56,7 +56,7 @@
                     tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim venie dolor in
                     hendrerit in
                     </p>
-                    <div class="col-sm-4">
+                    <div class="col">
                         <form action="#">
                             <div class="col"><label>Nombre</label></div>
                             <div class="col"><input class="input-text" type="text"></div>

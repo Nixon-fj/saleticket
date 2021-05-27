@@ -1,17 +1,8 @@
 @import 'vars';
-@import 'media-queries';
-
-/*
-tipografia
-font-family: 'Roboto', sans-serif;
-Thin 100
-Regular 400
-Medium 500
-Bold 700
-*/
+@import 'media-desktop';
 
 body{
-    @include respond-to($phone);
+    @include respond-to($large-desktop);
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -26,12 +17,23 @@ body{
 }
 .top-nav{
     @include container();
-    padding: 0 6em;
+    padding: 0 4em;
     background: $green;
     text-align: left;
 }
 .nav{
-    float: right;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -80em;
+    margin: 0;
+    padding: 2em 3em;
+    width: 100%;
+    height: 100%;
+    background: $green;
+    z-index: 2;
+    display: block;
+    transition: 0.5s;
 }
 
 @mixin btn {
@@ -47,15 +49,15 @@ body{
 .logo{
     @include btn();
     max-width: 172px;
-    padding: 1em 0;
+    padding: 0.6em 1em;
+    margin: 0;
     font-size: 22px;
     color: #fff;
-    text-align: left
 }
 .input-search{
     display: inline-block;
-    max-width: 120px;
-    margin: 1em 0 0 1em;
+    max-width: 150px;
+    margin: 0;
     background: none;
     border: 3px solid #fff;
     border-radius: 8px;
@@ -71,15 +73,15 @@ body{
 }
 .btn-top{
     @include btn();
-    padding: 1em 0.5em;
+    padding: 1em 0;
     font-size: 18px;
     color: #fff;
 }
 .select-category{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    margin: 0.6em 0;
-    padding: 0.5em;
+    margin: 0;
+    padding: 0.5em 0;
     font-size: 18px;
     color: #fff;
     background: $green;
@@ -89,36 +91,36 @@ body{
     @include container();
     padding: 0;
     overflow: hidden;
-    height: 600px;
+    height: auto;
 }
 h1{
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 35px;
+    font-weight: 500;
+    font-size: 20px;
     margin: 0.5em 0;
 }
 h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 20px;
     margin: 0.5em 0;
 }
-
 .img-slider{
     width: 100%;
 }
 .row{
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 .col{
-    margin: 0;
+    margin: 0.5em 0;
     padding: 0;
 }
 .col-sm-3{
-    margin: 1em 1.5em 1em 0;
+    margin: 1em 0.5em 0;
     padding: 0;
-    max-width: 300px;
+    width: 310px;
 }
 .galery{
     width: 100%;
@@ -145,15 +147,20 @@ h2{
 }
 .container-proximos{
     @include container();
+    padding: 0 2em;
 }
 .container-todo{
     @include container();
+    padding: 0 2em;
 }
 footer{
+    
     @include container();
     text-align: left;
     height: 80px;
     background: $green;
+    margin: 1em 0 0 0;
+    padding: 0.5em;
 }
 .footer-text{
     color: #fff;
@@ -163,14 +170,15 @@ footer{
     width: 100%;
     height: auto;
     margin: 0;
+    padding: 1em 0;
 }
 .container-event{
-    padding: 2em 6em;
+    padding: 0 2em;
 }
 .text{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
 }
 .btn-reservar{
     text-align: center;
@@ -196,46 +204,54 @@ footer{
     display: inline-block;
 }
 .img-reserv{
-    margin: 2em 1.5em 0 0;
-    width: 600px;
+    margin: 0;
+    padding: 1em 0;
+    width: 295px;
     height: auto;
 }
 .conteiner-reserv{
-    padding: 2em 6em;
+    padding: 0 2em;
 }
 .select-number{
     border-radius: 5px;
-    width: 300px;
+    width: 100%;
     margin: 0.5em 0;
 }
 .input-text{
     border-radius: 5px;
-    width: 300px;
+    width: 100%;
     margin: 0.5em 0;
 }
 .mob-menu{
-    display: none;
+    position: absolute;
+    top: 1em;
+    left: 1.5em;
+    display: inline;
+    font-size: 25px;
+    color: #fff;
 }
 .close-menu{
-    display: none;
+    display: inline;
+    font-size: 25px;
+    color: #fff;
+    float: right;
 }
 .container-confirm{
     @include container();
-    padding: 2em 4em;
+    padding: 2em 1em;
     display: none;
-    width: 35%;
+    width: 100%;
     height: auto;
     position: absolute;
     background-color: $green;
     z-index: 3;
-    top: 20em;
-    left: 30em;
+    top: 10em;
     border-radius: 0.5em;
     text-align: center;
 }
 .close-icon{
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     float: right;
     background: none;
     border: none;

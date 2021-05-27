@@ -5,7 +5,7 @@ function openMenu() {
 }
 function closeMenu() {
   let menuMob = document.body.getElementsByClassName('nav')[0];
-  menuMob.style.left = "-35em";
+  menuMob.style.left = "-80em";
 }
 
 //buscador

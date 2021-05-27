@@ -1,0 +1,110 @@
+@import 'vars';
+
+@mixin respond-to($large-desktop) {
+    @media only screen and #{$large-desktop} {
+        @content;
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .row{
+            justify-content: center;
+        }
+        .col{
+            margin: 0;
+            padding: 0;
+        }
+        .col-sm-3{
+            width: 290px;
+        }
+        .close-menu{
+            display: none;
+        }
+        .logo{
+            padding: 1em 0;
+            font-size: 25px;
+            text-align: left;
+        }
+        .mob-menu{
+            display: none;
+        }
+        .top-nav{
+            padding: 0 6em;
+        }
+        .nav{
+            background: none;
+            position: relative;
+            display: flex;
+            margin: 0;
+            padding: 0.5em;
+            float: none;
+            top: initial;
+            left: initial;
+        }
+        .btn-top{
+            padding: 1em 0.5em;
+        }
+        .input-search{
+            max-width: 120px;
+            margin: 1em 0 0 1em;
+        }
+        .select-category{
+            margin: 0.6em 0;
+            padding: 0.5em;
+        }
+        .container-slider{
+            max-height: 600px;
+        }
+        h1{
+            font-size: 25px;
+            margin: 1em 0;
+        }
+        h2{
+            font-size: 25px;
+            margin: 1em 0;
+        }
+        .text{
+            font-size: 16px;
+        }
+        .container-proximos{
+            padding: 1em 6em;
+        }
+        .container-todo{
+            padding: 1em 6em;
+        }
+        footer{
+            margin: 1em 0 0 0;
+            padding: 0.5em;
+        }
+        //event-info
+        .container-event{
+            padding: 1em 6em;
+        }
+        .img-event{
+            padding: 1em 0;
+        }
+        //reserv
+        .conteiner-reserv{
+            padding: 1em 6em;
+        }
+        .img-reserv{
+            margin: 2em 1.5em 0 0;
+            width: 600px;
+        }
+        .select-number{
+            width: 300px;
+        }
+        .input-text{
+            width: 300px;
+        }
+        .container-confirm{
+            width: 50%;
+            padding: 2em 4em;
+            top: 10em;
+        }
+        .close-icon{
+            font-size: 30px;
+        }
+    }
+}
