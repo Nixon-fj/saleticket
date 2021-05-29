@@ -42,7 +42,6 @@
                         </li>
                         <li><a href="event.php" class="btn-top">CALENDARIO</a></li>
                         <li><input class="input-search" type="text"><button class="btn-search fas fa-search" onclick="search()"></button></li>
-                        
                     </ul>
                 </div>
             </div>

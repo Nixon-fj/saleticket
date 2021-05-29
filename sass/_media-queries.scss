@@ -1,0 +1,8 @@
+@import 'vars';
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+        
+    }
+}
